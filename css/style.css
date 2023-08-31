@@ -1,0 +1,388 @@
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: Rway;
+    
+}
+body{
+    background: #0C0C0C;
+    
+    width: 100%;
+    margin: 0 auto;
+}
+/* container */
+.container{
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* header */
+.header{
+    background: #0C0C0C;
+}
+a{
+    color: #FFFFFF;
+}
+
+.header-nav__line{
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 59px;
+    font-family: RR;
+}
+.first-block{
+    text-align: center;
+}
+.ul-head{
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+    
+}
+.logo{
+    padding: 12px 18px 11px 18px;
+    background: rgba(10, 148, 24, 0.75);
+    border: 4px solid #06600F;
+    border-radius: 4px;
+}
+.block-black{
+    background: rgba(0, 0, 0, 0.5);
+    
+    border: 1px solid rgba(125, 115, 115, 0.5);
+}
+.navbar{
+    background: rgba(0, 0, 0, 0.5);
+    
+    
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Rway-Reg;
+}
+.ul-menu{
+    display: flex;
+    flex-direction: row;
+    
+    color: #FFFFFF;
+    
+}
+
+.navbar-btn{
+    padding: 22px 14px;
+    transition: 500ms;
+    
+
+}
+.navbar-btn:hover{
+    color: #FFFFFF;
+    background: #69CF17BF;
+}
+
+/* intro */
+.intro{
+    background: url(../img/food-burger-wallpaper-preview\ 1.jpg);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.intro-content{
+
+}
+h1{
+    color: #69CF17;
+    font-size: 72px;
+    font-family: Rway-Black;
+    line-height: 85px;
+    font-weight: 900;
+
+    padding-top: 167px;
+
+}
+.intro-title{
+    color: #69CF17;
+    font-family: ;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 17px;
+    padding-top: 18px;
+    
+}
+.intro-text{
+    color: #FFFFFF;
+    font-family: ;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 18px;
+
+   
+}
+.intro-price{
+    color: #FFFFFF;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 25px;
+    margin-top: 30px;
+    padding-top: 63px;
+    padding: 33px 76px;
+    width: 285px;
+    background: rgba(105, 207, 23, 0.5);
+    backdrop-filter: blur(18px);
+}
+.intro-btn{
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 15px 71px;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #69CF17 0%, #417D11 100%);
+    border-radius: 6px;
+}
+.intro-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* section nav */
+.section-nav{
+    height: 65px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    
+    background: #292929;
+    
+}
+.nav-menu__link{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 21px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    transition: color .1s linear;
+
+    
+}
+.nav-menu__link::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 2.3em;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: all .1s linear;
+}
+.nav-menu__link:hover::after{
+    opacity: 1;
+}
+.nav-menu__link:hover{
+    color: #FFFFFF;
+    
+}
+
+
+/* Cards */
+
+.section-cards{
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 30px;
+    background: #393636;
+    width: 100%;
+    
+    
+    
+}
+.mini-card{
+   
+    padding: 15px;
+    border: 1px solid #FFFFFF;
+    /* margin: 0 30px 30px 0; */
+    background: #0C0C0C;
+    /* max-width: 25%; */
+    width: 100%;
+    max-width: 370px;
+    display: inline-block;
+}
+
+.card-title{
+    color: #FFFFFF;
+    font-family: 'Rway-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 15px;
+    padding-top: 15px;
+}
+.card-about{
+    color: #FFFFFF;
+    width: 338px;
+    font-family: 'Rway-Reg';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 25px;
+    padding-top: 15px;
+}
+.card-img{
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.card-img:hover .hover-img{
+    opacity: 1;
+    transition: 0.5s;
+}
+.hover-img{
+    background: rgba(105, 207, 23, 0.9);
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    
+}
+
+
+/* .card-img::after{
+    
+} */
+
+.card-1{
+    border: 1px solid #FFFFFF;
+    
+}
+.card-2{
+    border: 1px solid #FFFFFF;
+    
+}
+.card-3{
+    border: 1px solid #FFFFFF;
+   
+}
+.card-4{
+    border: 1px solid #FFFFFF;
+   
+}
+.card-5{
+    border: 1px solid #FFFFFF;
+    
+}
+.card-6{
+    border: 1px solid #FFFFFF;
+   
+}
+.card-7{
+    border: 1px solid #FFFFFF;
+    
+}
+.card-8{
+    border: 1px solid #FFFFFF;
+    
+}
+.section-info{
+    background: #FFFFFF;
+}
+.map{
+    width: 100%;
+}
+.info-title{
+    font-family: 'Rway-Bold';
+    
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 40px;
+    color: #69CF17;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* footer */
+.footer{
+    background: linear-gradient(180deg, #000000 0%, rgba(105, 207, 23, 0.5) 100%);
+    height: 325px;
+}
+.footer-nav{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-navbar{
+    padding: 81px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+/* page section */
+.section__page{
+    padding: 30px 0;
+    
+}
+.content-page{
+    height: 400px;
+    background: url(../img/rare\ cutlet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.page-about{
+    padding-top: 30px;
+    color: #FFFFFF;
+    
+    font-family: 'Rway-Bold';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
